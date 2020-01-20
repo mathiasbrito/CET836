@@ -2,6 +2,14 @@
 
 ## DICAS
 
+* Lembrem-se, para percorrer vetores precisamos de dois `for` aninhados, ou seja, um dentro do outro, onde um percorre as linhas e o outro as colunas.
+* Para percorrer o vetor em ordem, usamos sempre o `i++` com o `i` iniciando de 0, porém podemos mudar o incremento para qualquer que seja inclusive negativo, e iniciar o `i` de qualquer valor que queiramos.
+* Se o seu programa ficar sem responsta por muito tempo e não imprimir o resultado ele pode estar em "Loop Infinito", ou seja a condição de parada do for nunca é atendida.
+* Considere, para fins de teste, imprimir valores parciais dentro do for, por exemplo, imprimir o valor do índice ou valor do atual elemento do vetor, assim você pode verificar se os resultados estão de acordo.
+* Lembrem-se que o programa executa as instruções em sequência, ler valores após o cálculo é um erro, pois durante o cálculo o programa ainda não leu os valores. A SEQUENCIA DE COMANDOS importa.
+* Para fazer a leitura do teclado dos diferentes elementos do vetor você precisará de um `for`, bem como dois `for` para fazer a leitura dos elementos de uma matriz.
+* Faça a leitura com scanf, apesar de termos visto o fgets ele só se aplica para strings. A exceção é a questão 10 da seção vetores.
+
 ## QUESTÕES
 
 ### VETORES
@@ -29,6 +37,8 @@ armazenar o maior número.
 8 - Declare dois vetores com 3 elementos cada, onde cada elemento corresponde a uma nota de um aluno. No segundo vetor leia o peso de cada nota. Ao final calcule a média ponderada do estudante com base nas notas e seus respectivos pesos.
 
 9 - Um vetor armazena em cada elemento a resposta dada por um entrevistado referente a um questinário. Cada elemento do vetor armazena a resposta a uma questão, que pode receber as letras 'a', 'b', 'c', 'd' e 'f'. Escreva um programa que leia 10 respostas de um entrevistado a 10 questões diferentes e armazene em um vetor, depois percorra o vetor e calcule quanto de cada letra ele respondeu, depois imprima um relatório, exemplo: a=2, b=0, c=3, d=1, e=0. DICA: crie um segundo vetor para armazenar o resultado da contagem, nesse caso esse vetor terá 5 posições uma para cada opção possível.
+
+10 - Vimos que fgets serve para ler um texto do teclado e armazenar em uma variável do tipo string (um vetor de caracteres). Porém fgets lê também o `enter` e o adiciona no vetor como um `\n`. Vimos também que o caracter `\0` indica o fim da string armazenada no vetor. Por tanto ao ler do teclado `Mathias<enter>` o fgets amazenará no vetor o seguinte { 'm', 'a', 't', 'h', 'i', 'a', 's', '\n', '\0'}. Escreva um programa que leia uma string, percorra o vetor armazenando a string até encontrar o `\n`, substitua o '\n' por '\0'. Imrpima a string na tela antes da mudança e depois, analise o resultado para identificar a diferença. DICA: Lembre-se, caracteres são referenciados com aspas simples, `\n` e `\0`, apesar de serem compostos por dois caracteres o `\` e `n` ou `0`, são considerados um.
 
 ### MATRIZES
 
